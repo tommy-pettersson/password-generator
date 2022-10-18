@@ -18,15 +18,12 @@ def build_password():
     result += get_random_chars(LOWERCASE, random.randint(8, 10))
     result += get_random_chars(DIGITS, random.randint(2, 4))
     result += get_random_chars(SYMBOLS, random.randint(2, 4))
-
     random.shuffle(result)
     result = "".join(result)
-
     return result
 
 def main():
-    password = build_password()
-    pyperclip.copy(password)
+    pyperclip.copy(build_password())
     print("Password generated and copied to clipboard.")
 
 if __name__ == "__main__":
