@@ -1,4 +1,6 @@
-import random, string, pyperclip
+import random
+import string
+import pyperclip
 
 UPPERCASE = string.ascii_uppercase
 LOWERCASE = string.ascii_lowercase
