@@ -1,3 +1,5 @@
+# Super simple password generator.
+
 import random
 import string
 import pyperclip
